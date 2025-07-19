@@ -6,13 +6,133 @@
   <title>وکیل سجاد حسین‌پور - متخصص جرایم سایبری</title>
   <link href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@300;400;600;700&display=swap" rel="stylesheet" />
   <style>
-    body { font-family: 'Vazirmatn', Tahoma, sans-serif; background: #f5f5f5; text-align: center; padding: 50px; }
-    h1 { font-size: 2rem; color: #333; }
-    p { color: #666; }
+    body {
+      font-family: 'Vazirmatn', Tahoma, sans-serif;
+      margin: 0;
+      background: #f0f4f8;
+      color: #333;
+      line-height: 1.6;
+    }
+    header {
+      position: fixed;
+      top: 0;
+      right: 0;
+      left: 0;
+      background: #fff;
+      padding: 1rem 2rem;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+      z-index: 1000;
+    }
+    .logo {
+      font-weight: bold;
+      font-size: 1.5rem;
+      color: #2c3e50;
+    }
+    .hero {
+      padding: 120px 20px 60px;
+      text-align: center;
+      background: linear-gradient(135deg, #667eea, #764ba2);
+      color: white;
+    }
+    .hero h1 {
+      font-size: 2.5rem;
+      margin-bottom: 1rem;
+    }
+    .hero p {
+      font-size: 1.2rem;
+      margin-bottom: 2rem;
+    }
+    .cta-button {
+      display: inline-block;
+      background: #e74c3c;
+      color: white;
+      padding: 1rem 2rem;
+      border-radius: 50px;
+      text-decoration: none;
+      font-weight: bold;
+      transition: background 0.3s;
+    }
+    .cta-button:hover {
+      background: #c0392b;
+    }
+    .services, .contact {
+      max-width: 900px;
+      margin: 40px auto;
+      padding: 2rem;
+      background: white;
+      border-radius: 12px;
+      box-shadow: 0 2px 20px rgba(0,0,0,0.1);
+    }
+    .services h2, .contact h2 {
+      text-align: center;
+      margin-bottom: 1rem;
+      font-size: 2rem;
+    }
+    .services p {
+      text-align: center;
+      font-size: 1.1rem;
+    }
+    form {
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+      max-width: 500px;
+      margin: 0 auto;
+    }
+    input, textarea {
+      padding: 0.8rem;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      font-family: inherit;
+      font-size: 1rem;
+    }
+    button {
+      background: #667eea;
+      color: white;
+      border: none;
+      padding: 0.8rem;
+      border-radius: 8px;
+      font-size: 1rem;
+      cursor: pointer;
+      transition: background 0.3s;
+    }
+    button:hover {
+      background: #556cd6;
+    }
+    @media (max-width: 768px) {
+      .hero h1 { font-size: 2rem; }
+      .hero p { font-size: 1rem; }
+    }
   </style>
 </head>
 <body>
-  <h1>سجاد حسین‌پور - وکیل متخصص جرایم سایبری</h1>
-  <p>مشاوره و پیگیری پرونده‌های جرایم رایانه‌ای</p>
+  <header>
+    <div class="logo">⚖️ وکیل سجاد حسین‌پور</div>
+  </header>
+
+  <section class="hero">
+    <h1>وکیل سجاد حسین‌پور</h1>
+    <p>متخصص جرایم سایبری و مشاوره حقوقی تخصصی</p>
+    <a href="#contact" class="cta-button">مشاوره رایگان</a>
+  </section>
+
+  <section class="services">
+    <h2>🛡️ خدمات تخصصی</h2>
+    <p>
+      رسیدگی تخصصی به پرونده‌های جرایم سایبری، کلاهبرداری اینترنتی، نفوذ و هک، 
+      سرقت داده و نقض حریم خصوصی دیجیتال، مشاوره تخصصی، دفاع از متهمان و پیگیری شاکیان.
+    </p>
+  </section>
+
+  <section class="contact" id="contact">
+    <h2>📞 تماس با من</h2>
+    <form action="https://formspree.io/f/your-id" method="POST">
+      <input type="text" name="name" placeholder="نام شما" required>
+      <input type="email" name="_replyto" placeholder="ایمیل شما" required>
+      <textarea name="message" rows="5" placeholder="پیام شما" required></textarea>
+      <button type="submit">ارسال پیام</button>
+    </form>
+    <p>یا مستقیم در <a href="https://wa.me/989148379359" style="color:#e74c3c;">واتساپ</a> پیام دهید</p>
+  </section>
 </body>
 </html>
